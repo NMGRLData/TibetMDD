@@ -37,12 +37,12 @@ Script duration 808.0
 Run total estimated duration= 809.000
 run duration: 0:13:29
 doing event level: 2
-12:18:49 -- Setting default integration. t=1.048576
+12:25:02 -- Setting default integration. t=1.048576
 setting integration time = 1.048576
 SetIntegrationTime 1.048576 ===>> OK
 ----------------- start -----------------
 **************** Experiment Type: Ar/Ar, Ar/Ar
-close session 4918750768
+close session 4910362160
 $$$$$ Clearing conditionals
 adding conditionals 
 Add queue conditionals
@@ -60,31 +60,31 @@ $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
-12:18:49 -- ******* Pre Extraction Check *******
+12:25:03 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.00000,-0.15379,0.01991,-0.25978,-0.45269
-12:18:49 -- testing system defined conditionals
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.00000,0.07675,0.10207,-0.45578,-0.53094
+12:25:03 -- testing system defined conditionals
 Checking default pre extraction terminations n=2
 testing L2_CDD_
 evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
 GetDeflection L2 (CDD) ===>> 0
 testing L2_CDD_==3250
 evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
-12:18:49 -- ******* Pre Extraction Check Passed *******
+12:25:03 -- ******* Pre Extraction Check Passed *******
 =================================================================================
-12:18:49 -- stopping status monitor
-stop 4926415696
-Alive clients [4889879184]
-12:18:49 -- starting status monitor
-start 4926415696
+12:25:03 -- stopping status monitor
+stop 4918135888
+Alive clients [4882801296]
+12:25:03 -- starting status monitor
+start 4918135888
 Monitor already running
 start extraction
 do extraction
-Analysis started at 12:18:49.300325
+Analysis started at 12:25:03.077627
 Extraction Started felix_furnace.py
-12:18:49 -- ******* Extraction Started felix_furnace.py *******
+12:25:03 -- ******* Extraction Started felix_furnace.py *******
 state changed from not run to extraction
-DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x1277e2ad0>
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x127866650>
 testing...
 no interpolation path defined
 executed 1684.0
@@ -110,11 +110,15 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 Open D ===>> OK
 GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 0.0
 GetValveState D ===>> OK
 change switch state (True, True)
 update switch state D True args=() kw={} ncanvase=2
-12:18:49 -- OPEN   VALVE-D (Bone to CO2 Laser)
+12:25:03 -- OPEN   VALVE-D (Bone to CO2 Laser)
 ---------------------------------------- open D () result=[(True, True)], time=0.14 sec
+GetProcessValue ===>> 16.0
+response t=0.0010359287262, out=0, setpoint=0, response=16.0
+Get Checksum: -1450041581
 locked=[False]
 close ('J',) {}
 closing name=J desc=---
@@ -127,9 +131,8 @@ Close J ===>> OK
 GetValveState J ===>> False
 change switch state (True, True)
 update switch state J False args=() kw={} ncanvase=2
-12:18:49 -- CLOSE  VALVE-J (Bone to APIS)
+12:25:03 -- CLOSE  VALVE-J (Bone to APIS)
 ---------------------------------------- close J () result=[(True, True)]
-Get Checksum: -1450041581
 locked=[False]
 close ('FC',) {}
 closing name=FC desc=---
@@ -153,8 +156,11 @@ check software interlocks FC
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 0.0
+GetProcessValue ===>> 17.0
+response t=2.00373005867, out=0, setpoint=0, response=17.0
 Close FC ===>> OK
-GetSetpoint ===>> 
 GetValveState FC ===>> OK
 change switch state (False, False)
 locked=[False]
@@ -168,19 +174,19 @@ disable
 executed 1684.0
 Post Equilibration Started felix_pump_extraction_line.py
 Post Measurement Started felix_pump_ms.py
-12:18:52 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
-12:18:52 -- ******* Post Measurement Started felix_pump_ms.py *******
+12:25:06 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
+12:25:06 -- ******* Post Measurement Started felix_pump_ms.py *******
 testing...
 testing...
 no interpolation path defined
 no interpolation path defined
-executed 0
 calculate duration
-Pumping spectrometer
+executed 0
 testing...
+Pumping spectrometer
 no interpolation path defined
-open () {'name': 'V'}
 executed 4.0
+open () {'name': 'V'}
 executed 4.0
 opening name=V desc=---
 Pump after analysis
@@ -188,10 +194,10 @@ doing GOSUB
 checking ownership. requestor=129.138.12.137
 check software interlocks V
 interlocks []
-actuate state mode=None-script, software_lock=False
 testing...
-doing actuation None-script open_channel False
+actuate state mode=None-script, software_lock=False
 no interpolation path defined
+doing actuation None-script open_channel False
 executed 4.0
 Pump Bone
 close () {'description': 'Felix Inlet'}
@@ -202,34 +208,31 @@ interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 Open V ===>> OK
-GetProcessValue ===>> 17.0
-response t=0.00102496147156, out=0, setpoint=0, response=17.0
 Close H ===>> OK
 GetValveState V ===>> OK
 change switch state (True, True)
 update switch state V True args=() kw={} ncanvase=2
-12:18:52 -- OPEN   VALVE-V (Felix Ion Pump)
----------------------------------------- open V () result=[(True, True)], time=0.10 sec
+12:25:06 -- OPEN   VALVE-V (Felix Ion Pump)
+---------------------------------------- open V () result=[(True, True)], time=0.15 sec
 GetValveState H ===>> False
 change switch state (True, True)
 update switch state H False args=() kw={} ncanvase=2
-12:18:52 -- CLOSE  VALVE-H (Felix Inlet)
+12:25:06 -- CLOSE  VALVE-H (Felix Inlet)
 ---------------------------------------- close None (Felix Inlet) result=[(True, True)]
-GetPercentOutput ===>> 0.0
 locked=[False]
 executed 0
 felix_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-12:18:52 -- ******* Post Measurement Finished *******
+12:25:06 -- ******* Post Measurement Finished *******
 ----------------- finish -----------------
 state changed from extraction to failed
 ----------------- stop -----------------
 Extraction Finished unsuccessfully
-12:18:52 -- ******* Extraction Finished unsuccessfully *******
+12:25:06 -- ******* Extraction Finished unsuccessfully *******
 failed execution step Extraction Failed
 extraction did not complete successfully
-12:18:52 -- Automated run bu-FD-F-457 failed duration: 3.867 s
+12:25:06 -- Automated run bu-FD-F-457 failed duration: 3.730 s
 ----------------- finish -----------------
 ----------------- stop -----------------
 finish run. runs completed=1
