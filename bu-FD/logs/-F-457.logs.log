@@ -37,12 +37,12 @@ Script duration 808.0
 Run total estimated duration= 809.000
 run duration: 0:13:29
 doing event level: 2
-12:25:02 -- Setting default integration. t=1.048576
+12:36:38 -- Setting default integration. t=1.048576
 setting integration time = 1.048576
 SetIntegrationTime 1.048576 ===>> OK
 ----------------- start -----------------
 **************** Experiment Type: Ar/Ar, Ar/Ar
-close session 4910362160
+close session 4910399024
 $$$$$ Clearing conditionals
 adding conditionals 
 Add queue conditionals
@@ -60,31 +60,31 @@ $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
-12:25:03 -- ******* Pre Extraction Check *******
+12:36:38 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.00000,0.07675,0.10207,-0.45578,-0.53094
-12:25:03 -- testing system defined conditionals
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.00000,0.21605,0.02417,-0.30872,-0.67092
+12:36:38 -- testing system defined conditionals
 Checking default pre extraction terminations n=2
 testing L2_CDD_
 evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
 GetDeflection L2 (CDD) ===>> 0
 testing L2_CDD_==3250
 evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
-12:25:03 -- ******* Pre Extraction Check Passed *******
+12:36:38 -- ******* Pre Extraction Check Passed *******
 =================================================================================
-12:25:03 -- stopping status monitor
-stop 4918135888
-Alive clients [4882801296]
-12:25:03 -- starting status monitor
-start 4918135888
+12:36:38 -- stopping status monitor
+stop 4916962032
+Alive clients [4881490576]
+12:36:38 -- starting status monitor
+start 4916962032
 Monitor already running
 start extraction
 do extraction
-Analysis started at 12:25:03.077627
+Analysis started at 12:36:38.282165
 Extraction Started felix_furnace.py
-12:25:03 -- ******* Extraction Started felix_furnace.py *******
+12:36:38 -- ******* Extraction Started felix_furnace.py *******
 state changed from not run to extraction
-DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x127866650>
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x126dcead0>
 testing...
 no interpolation path defined
 executed 1684.0
@@ -114,11 +114,10 @@ GetSetpoint ===>> 0.0
 GetValveState D ===>> OK
 change switch state (True, True)
 update switch state D True args=() kw={} ncanvase=2
-12:25:03 -- OPEN   VALVE-D (Bone to CO2 Laser)
----------------------------------------- open D () result=[(True, True)], time=0.14 sec
-GetProcessValue ===>> 16.0
-response t=0.0010359287262, out=0, setpoint=0, response=16.0
-Get Checksum: -1450041581
+12:36:38 -- OPEN   VALVE-D (Bone to CO2 Laser)
+---------------------------------------- open D () result=[(True, True)], time=0.15 sec
+GetProcessValue ===>> 17.0
+response t=0.000868082046509, out=0, setpoint=0, response=17.0
 locked=[False]
 close ('J',) {}
 closing name=J desc=---
@@ -131,51 +130,58 @@ Close J ===>> OK
 GetValveState J ===>> False
 change switch state (True, True)
 update switch state J False args=() kw={} ncanvase=2
-12:25:03 -- CLOSE  VALVE-J (Bone to APIS)
+12:36:38 -- CLOSE  VALVE-J (Bone to APIS)
 ---------------------------------------- close J () result=[(True, True)]
 locked=[False]
-close ('FC',) {}
-closing name=FC desc=---
+Failed to close valve J 
 checking ownership. requestor=129.138.12.137
-check software interlocks FC
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script close_channel True
-Close FC ===>> OK
-set states for children of FC. state=False
-handle state [('FC', False)]
-update switch state FC False args=() kw={'refresh': False} ncanvase=2
-refresh_canvas_needed fired
-GetValveState FC ===>> OK
-change switch state (False, False)
----------------------------------------- close FC () result=[(False, False)]
-locked=[False]
-Failed to close valve FC 
-checking ownership. requestor=129.138.12.137
-check software interlocks FC
+check software interlocks J
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
+Close J ===>> OK
+GetValveState J ===>> False
+change switch state (True, True)
+update switch state J False args=() kw={} ncanvase=2
+12:36:39 -- CLOSE  VALVE-J (Bone to APIS)
+locked=[False]
+Failed to close valve J 
+Failed to close valve J 
 GetPercentOutput ===>> 0.0
 GetSetpoint ===>> 0.0
 GetProcessValue ===>> 17.0
-response t=2.00373005867, out=0, setpoint=0, response=17.0
-Close FC ===>> OK
-GetValveState FC ===>> OK
-change switch state (False, False)
-locked=[False]
-Failed to close valve FC 
+response t=2.00083303452, out=0, setpoint=0, response=17.0
+Get Checksum: -169385997
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 0.0
+GetProcessValue ===>> 17.0
+response t=4.00224590302, out=0, setpoint=0, response=17.0
+Get Checksum: -169385997
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 0.0
+GetProcessValue ===>> 17.0
+response t=6.00446009636, out=0, setpoint=0, response=17.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 0.0
+GetProcessValue ===>> 17.0
+response t=8.00777196884, out=0, setpoint=0, response=17.0
+Get Checksum: -169385997
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% disable
 set extraction state False (0.75, 'red', 1.5)
 disable
+Failed to close valve J 
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 0.0
+GetProcessValue ===>> 17.0
+response t=10.0111060143, out=0, setpoint=0, response=17.0
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% disable
 set extraction state False (0.75, 'red', 1.5)
 disable
 executed 1684.0
 Post Equilibration Started felix_pump_extraction_line.py
 Post Measurement Started felix_pump_ms.py
-12:25:06 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
-12:25:06 -- ******* Post Measurement Started felix_pump_ms.py *******
+12:36:48 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
+12:36:48 -- ******* Post Measurement Started felix_pump_ms.py *******
 testing...
 testing...
 no interpolation path defined
@@ -194,10 +200,10 @@ doing GOSUB
 checking ownership. requestor=129.138.12.137
 check software interlocks V
 interlocks []
-testing...
 actuate state mode=None-script, software_lock=False
-no interpolation path defined
+testing...
 doing actuation None-script open_channel False
+no interpolation path defined
 executed 4.0
 Pump Bone
 close () {'description': 'Felix Inlet'}
@@ -212,27 +218,27 @@ Close H ===>> OK
 GetValveState V ===>> OK
 change switch state (True, True)
 update switch state V True args=() kw={} ncanvase=2
-12:25:06 -- OPEN   VALVE-V (Felix Ion Pump)
----------------------------------------- open V () result=[(True, True)], time=0.15 sec
+12:36:49 -- OPEN   VALVE-V (Felix Ion Pump)
+---------------------------------------- open V () result=[(True, True)], time=0.14 sec
 GetValveState H ===>> False
 change switch state (True, True)
 update switch state H False args=() kw={} ncanvase=2
-12:25:06 -- CLOSE  VALVE-H (Felix Inlet)
+12:36:49 -- CLOSE  VALVE-H (Felix Inlet)
 ---------------------------------------- close None (Felix Inlet) result=[(True, True)]
 locked=[False]
 executed 0
 felix_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-12:25:06 -- ******* Post Measurement Finished *******
+12:36:49 -- ******* Post Measurement Finished *******
 ----------------- finish -----------------
 state changed from extraction to failed
 ----------------- stop -----------------
 Extraction Finished unsuccessfully
-12:25:06 -- ******* Extraction Finished unsuccessfully *******
+12:36:49 -- ******* Extraction Finished unsuccessfully *******
 failed execution step Extraction Failed
 extraction did not complete successfully
-12:25:06 -- Automated run bu-FD-F-457 failed duration: 3.730 s
+12:36:49 -- Automated run bu-FD-F-457 failed duration: 11.203 s
 ----------------- finish -----------------
 ----------------- stop -----------------
 finish run. runs completed=1
