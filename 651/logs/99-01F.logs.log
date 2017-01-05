@@ -1,0 +1,4172 @@
+do run
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 624.242112
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 184.0
+script duration name:furnace seconds:184.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 4.0
+executed 4.0
+Script duration 808.0
+Run total estimated duration= 809.000
+run duration: 0:13:29
+doing event level: 2
+20:23:03 -- Setting default integration. t=1.048576
+setting integration time = 1.048576
+SetIntegrationTime 1.048576 ===>> OK
+----------------- start -----------------
+**************** Experiment Type: Ar/Ar, Ar/Ar
+create new session 4909374352
+close session 4909374352
+$$$$$ Clearing conditionals
+adding conditionals 
+Add queue conditionals
+add default conditionals
+adding default conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+Start automated run 65199-01F
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+%%%%%%%%%%%%%%%%%% setting automated run 65199-01F
+No value "sensitivity_multiplier" in metadata
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+============================= Pre Extraction Check =============================
+loading queue conditionals pre_run_terminations
+loading system conditionals pre_run_terminations
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+20:23:03 -- ******* Pre Extraction Check *******
+Get a measurement from the spectrometer
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.00000,0.11894,-0.25300,-0.00983,-0.48085
+20:23:03 -- testing system defined conditionals
+Checking default pre extraction terminations n=2
+testing L2_CDD_
+evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:23:03 -- ******* Pre Extraction Check Passed *******
+=================================================================================
+20:23:03 -- stopping status monitor
+stop 4993536464
+Alive clients [4874419184]
+20:23:03 -- starting status monitor
+start 4993536464
+Monitor already running
+start extraction
+do extraction
+Analysis started at 20:23:03.459336
+Extraction Started felix_furnace.py
+20:23:03 -- ******* Extraction Started felix_furnace.py *******
+state changed from not run to extraction
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x123593050>
+testing...
+no interpolation path defined
+executed 966.0
+start_response_recorder () {}
+Felix unknown furnace analysis
+start response recorder
+close ('F',) {}
+closing name=F desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks F
+interlocks []
+actuate state mode=None-script, software_lock=True
+VALVE-F(CO2 Laser to Bone) software locked
+change switch state (True, False)
+---------------------------------------- close F () result=[(True, False)]
+locked=[True]
+open ('D',) {}
+opening name=D desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks D
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+GetPercentOutput ===>> 5.4
+Open D ===>> OK
+GetSetpoint ===>> 300.0
+GetValveState D ===>> OK
+change switch state (True, True)
+update switch state D True args=() kw={} ncanvase=4
+GetProcessValue ===>> 299.0
+response t=0.00150012969971, out=5.4, setpoint=300.0, response=299.0
+20:23:03 -- OPEN   VALVE-D (Bone to CO2 Laser)
+---------------------------------------- open D () result=[(True, True)], time=0.21 sec
+locked=[False]
+close ('J',) {}
+closing name=J desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks J
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close J ===>> OK
+GetValveState J ===>> False
+change switch state (False, False)
+---------------------------------------- close J () result=[(False, False)]
+locked=[False]
+close ('FC',) {}
+closing name=FC desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks FC
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close FC ===>> OK
+set states for children of FC. state=False
+handle state [('FC', False)]
+update switch state FC False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetPercentOutput ===>> 5.3
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 300.0
+response t=2.00187206268, out=5.3, setpoint=300.0, response=300.0
+GetValveState FC ===>> OK
+change switch state (None, False)
+---------------------------------------- close FC () result=[(None, False)]
+locked=[False]
+open ('FH',) {}
+opening name=FH desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks FH
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open FH ===>> OK
+GetValveState FH ===>> False
+change switch state (None, False)
+---------------------------------------- open FH () result=[(None, False)], time=1.25 sec
+locked=[False]
+Failed to open valve FH 
+checking ownership. requestor=129.138.12.137
+check software interlocks FH
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Get Checksum: -906921552
+State checksums do not match. Local:1601394399 Remote:-906921552
+State checksum failed
+GetPercentOutput ===>> 6.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 299.0
+response t=4.0010831356, out=6.0, setpoint=300.0, response=299.0
+Open FH ===>> OK
+GetValveState FH ===>> False
+change switch state (None, False)
+locked=[False]
+Furnace enabled. Heating sample.
+enable () {}
+set extraction state NMGRLFurnace Enabled (False, 'red', 1.5)
+could not find manager name="NMGRLFurnace" func="enable_device"
+set_pid_parameters (600.0,) {}
+setting pid parameters for 600.0
+{"pid": "HO,25;XP,250;TI,75;TD,10", "command": "SetPID"} ===>> OK
+BEGIN INTERVAL Interval 1 waiting for 720.0
+block started
+set extract to 600.0 (temp)
+WaitControl setup for 720.0  
+extract () {}
+set extraction state NMGRLFurnace ON! 600.0(temp) (0.75, 'red', 1.5)
+extract sample to 600.0 (temp)
+extract
+set setpoint to 600.0
+set setpoint=600.0
+setting pid parameters for 600.0
+{"pid": "HO,25;XP,250;TI,75;TD,10", "command": "SetPID"} ===>> OK
+{"setpoint": 600.0, "command": "SetSetpoint"} ===>> OK
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+set states for children of FH. state=False
+handle state [('FH', False)]
+update switch state FH False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetPercentOutput ===>> 6.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 299.0
+response t=6.00402808189, out=6.1, setpoint=600.0, response=299.0
+set states for children of FH. state=True
+handle state [('FH', True)]
+update switch state FH True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: 1601394399
+Join finished
+block finished. duration 2.00732493401
+COMPLETE INTERVAL waiting for Interval 1 to complete
+GetPercentOutput ===>> 8.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 300.0
+response t=8.00597405434, out=8.3, setpoint=600.0, response=300.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 12.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 299.0
+response t=10.009663105, out=12.1, setpoint=600.0, response=299.0
+GetPercentOutput ===>> 13.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 300.0
+response t=12.0127739906, out=13.8, setpoint=600.0, response=300.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 15.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 301.0
+response t=14.0166070461, out=15.4, setpoint=600.0, response=301.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 18.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 301.0
+response t=16.0190210342, out=18.0, setpoint=600.0, response=301.0
+GetPercentOutput ===>> 18.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 303.0
+response t=18.0203440189, out=18.8, setpoint=600.0, response=303.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 19.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 305.0
+response t=20.0207371712, out=19.5, setpoint=600.0, response=305.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 21.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 307.0
+response t=22.0201940536, out=21.0, setpoint=600.0, response=307.0
+GetPercentOutput ===>> 20.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 311.0
+response t=24.0223670006, out=20.8, setpoint=600.0, response=311.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 20.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 315.0
+response t=26.023717165, out=20.4, setpoint=600.0, response=315.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 20.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 319.0
+response t=28.024916172, out=20.2, setpoint=600.0, response=319.0
+GetPercentOutput ===>> 19.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 324.0
+response t=30.028096199, out=19.4, setpoint=600.0, response=324.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 18.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 331.0
+response t=32.0289151669, out=18.0, setpoint=600.0, response=331.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 17.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 337.0
+response t=34.0308530331, out=17.2, setpoint=600.0, response=337.0
+GetPercentOutput ===>> 16.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 344.0
+response t=36.0313370228, out=16.5, setpoint=600.0, response=344.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 15.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 350.0
+response t=38.0312891006, out=15.8, setpoint=600.0, response=350.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 15.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 357.0
+response t=40.0324230194, out=15.4, setpoint=600.0, response=357.0
+GetPercentOutput ===>> 15.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 364.0
+response t=42.0353701115, out=15.0, setpoint=600.0, response=364.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 14.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 371.0
+response t=44.0349230766, out=14.6, setpoint=600.0, response=371.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 14.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 378.0
+response t=46.0377101898, out=14.3, setpoint=600.0, response=378.0
+GetPercentOutput ===>> 13.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 385.0
+response t=48.0383930206, out=13.8, setpoint=600.0, response=385.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 13.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 391.0
+response t=50.0410540104, out=13.7, setpoint=600.0, response=391.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 13.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 398.0
+response t=52.044615984, out=13.5, setpoint=600.0, response=398.0
+GetPercentOutput ===>> 13.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 405.0
+response t=54.0478320122, out=13.4, setpoint=600.0, response=405.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 13.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 411.0
+response t=56.0501580238, out=13.1, setpoint=600.0, response=411.0
+GetPercentOutput ===>> 12.0
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 417.0
+response t=58.0530040264, out=12.0, setpoint=600.0, response=417.0
+GetPercentOutput ===>> 12.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 423.0
+response t=60.0551571846, out=12.6, setpoint=600.0, response=423.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 12.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 429.0
+response t=62.0554230213, out=12.3, setpoint=600.0, response=429.0
+GetPercentOutput ===>> 12.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 435.0
+response t=64.055961132, out=12.2, setpoint=600.0, response=435.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 12.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 440.0
+response t=66.0564901829, out=12.1, setpoint=600.0, response=440.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 11.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 446.0
+response t=68.0576660633, out=11.0, setpoint=600.0, response=446.0
+GetPercentOutput ===>> 11.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 451.0
+response t=70.057721138, out=11.0, setpoint=600.0, response=451.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 11.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 456.0
+response t=72.0584421158, out=11.5, setpoint=600.0, response=456.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 11.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 461.0
+response t=74.0587720871, out=11.5, setpoint=600.0, response=461.0
+GetPercentOutput ===>> 11.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 466.0
+response t=76.0598180294, out=11.5, setpoint=600.0, response=466.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 11.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 470.0
+response t=78.05996418, out=11.4, setpoint=600.0, response=470.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 11.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 475.0
+response t=80.0607721806, out=11.2, setpoint=600.0, response=475.0
+GetPercentOutput ===>> 11.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 479.0
+response t=82.0621221066, out=11.1, setpoint=600.0, response=479.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 11.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 483.0
+response t=84.0652971268, out=11.0, setpoint=600.0, response=483.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 487.0
+response t=86.0685591698, out=10.6, setpoint=600.0, response=487.0
+GetPercentOutput ===>> 10.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 491.0
+response t=88.0700480938, out=10.6, setpoint=600.0, response=491.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 495.0
+response t=90.0726461411, out=10.5, setpoint=600.0, response=495.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 499.0
+response t=92.0754060745, out=10.5, setpoint=600.0, response=499.0
+GetPercentOutput ===>> 10.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 502.0
+response t=94.0762209892, out=10.5, setpoint=600.0, response=502.0
+GetPercentOutput ===>> 10.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 505.0
+response t=96.0776371956, out=10.6, setpoint=600.0, response=505.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 509.0
+response t=98.0798110962, out=10.4, setpoint=600.0, response=509.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 512.0
+response t=100.082257032, out=10.3, setpoint=600.0, response=512.0
+GetPercentOutput ===>> 10.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 515.0
+response t=102.085180044, out=10.6, setpoint=600.0, response=515.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 518.0
+response t=104.084413052, out=10.1, setpoint=600.0, response=518.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 520.0
+response t=106.085125208, out=10.3, setpoint=600.0, response=520.0
+GetPercentOutput ===>> 10.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 523.0
+response t=108.084708214, out=10.5, setpoint=600.0, response=523.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 526.0
+response t=110.086527109, out=10.0, setpoint=600.0, response=526.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 528.0
+response t=112.089901209, out=10.1, setpoint=600.0, response=528.0
+GetPercentOutput ===>> 10.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 531.0
+response t=114.091890097, out=10.3, setpoint=600.0, response=531.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 533.0
+response t=116.091977119, out=9.9, setpoint=600.0, response=533.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 535.0
+response t=118.092542171, out=10.1, setpoint=600.0, response=535.0
+GetPercentOutput ===>> 10.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 537.0
+response t=120.096255064, out=10.2, setpoint=600.0, response=537.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 540.0
+response t=122.095757008, out=9.8, setpoint=600.0, response=540.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 542.0
+response t=124.095857143, out=9.8, setpoint=600.0, response=542.0
+GetPercentOutput ===>> 10.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 543.0
+response t=126.096309185, out=10.1, setpoint=600.0, response=543.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 546.0
+response t=128.099371195, out=9.7, setpoint=600.0, response=546.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 547.0
+response t=130.102102995, out=9.8, setpoint=600.0, response=547.0
+GetPercentOutput ===>> 10.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 549.0
+response t=132.105288029, out=10.1, setpoint=600.0, response=549.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 551.0
+response t=134.106574059, out=9.7, setpoint=600.0, response=551.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 553.0
+response t=136.110288143, out=9.6, setpoint=600.0, response=553.0
+GetPercentOutput ===>> 10.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 554.0
+response t=138.113203049, out=10.0, setpoint=600.0, response=554.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 556.0
+response t=140.116420984, out=9.5, setpoint=600.0, response=556.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 557.0
+response t=142.11692214, out=9.5, setpoint=600.0, response=557.0
+GetPercentOutput ===>> 10.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 558.0
+response t=144.118048191, out=10.1, setpoint=600.0, response=558.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 560.0
+response t=146.118000031, out=9.6, setpoint=600.0, response=560.0
+GetPercentOutput ===>> 9.6
+Get Checksum: 1601394399
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 561.0
+response t=148.117027998, out=9.6, setpoint=600.0, response=561.0
+GetPercentOutput ===>> 9.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 562.0
+response t=150.119948149, out=9.9, setpoint=600.0, response=562.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 564.0
+response t=152.120904207, out=9.5, setpoint=600.0, response=564.0
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 565.0
+response t=154.124555111, out=9.5, setpoint=600.0, response=565.0
+GetPercentOutput ===>> 10.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 566.0
+response t=156.125333071, out=10.0, setpoint=600.0, response=566.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 567.0
+response t=158.125104189, out=9.4, setpoint=600.0, response=567.0
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 568.0
+response t=160.125102997, out=9.4, setpoint=600.0, response=568.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 10.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 569.0
+response t=162.12485218, out=10.0, setpoint=600.0, response=569.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 570.0
+response t=164.126445055, out=9.6, setpoint=600.0, response=570.0
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 571.0
+response t=166.129258156, out=9.5, setpoint=600.0, response=571.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 572.0
+response t=168.131909132, out=9.9, setpoint=600.0, response=572.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 573.0
+response t=170.135276079, out=9.5, setpoint=600.0, response=573.0
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 574.0
+response t=172.138351202, out=9.4, setpoint=600.0, response=574.0
+GetPercentOutput ===>> 9.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 575.0
+response t=174.141854048, out=9.8, setpoint=600.0, response=575.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 576.0
+response t=176.14412117, out=9.5, setpoint=600.0, response=576.0
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 577.0
+response t=178.145905018, out=9.5, setpoint=600.0, response=577.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 577.0
+response t=180.148722172, out=9.7, setpoint=600.0, response=577.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 578.0
+response t=182.150478125, out=9.4, setpoint=600.0, response=578.0
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 579.0
+response t=184.153694153, out=9.3, setpoint=600.0, response=579.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 579.0
+response t=186.15362215, out=9.8, setpoint=600.0, response=579.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 580.0
+response t=188.156653166, out=9.4, setpoint=600.0, response=580.0
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 581.0
+response t=190.159753084, out=9.3, setpoint=600.0, response=581.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 581.0
+response t=192.161249161, out=9.9, setpoint=600.0, response=581.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 582.0
+response t=194.163955212, out=9.5, setpoint=600.0, response=582.0
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 583.0
+response t=196.164285183, out=9.3, setpoint=600.0, response=583.0
+GetPercentOutput ===>> 9.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 583.0
+response t=198.166365147, out=9.7, setpoint=600.0, response=583.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 584.0
+response t=200.168560982, out=9.4, setpoint=600.0, response=584.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 584.0
+response t=202.172255993, out=9.2, setpoint=600.0, response=584.0
+GetPercentOutput ===>> 9.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 585.0
+response t=204.175883055, out=9.6, setpoint=600.0, response=585.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 585.0
+response t=206.175415039, out=9.5, setpoint=600.0, response=585.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 586.0
+response t=208.175942183, out=9.3, setpoint=600.0, response=586.0
+GetPercentOutput ===>> 9.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 586.0
+response t=210.179017067, out=9.6, setpoint=600.0, response=586.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 587.0
+response t=212.181555033, out=9.2, setpoint=600.0, response=587.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 587.0
+response t=214.181819201, out=9.1, setpoint=600.0, response=587.0
+GetPercentOutput ===>> 9.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 588.0
+response t=216.182199001, out=9.6, setpoint=600.0, response=588.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 588.0
+response t=218.184617043, out=9.3, setpoint=600.0, response=588.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 589.0
+response t=220.188592196, out=9.1, setpoint=600.0, response=589.0
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 589.0
+response t=222.187638998, out=9.4, setpoint=600.0, response=589.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 589.0
+response t=224.190339088, out=9.2, setpoint=600.0, response=589.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 590.0
+response t=226.194219112, out=9.1, setpoint=600.0, response=590.0
+GetPercentOutput ===>> 9.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 590.0
+response t=228.194636106, out=9.7, setpoint=600.0, response=590.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 590.0
+response t=230.195430994, out=9.4, setpoint=600.0, response=590.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 591.0
+response t=232.198773146, out=9.2, setpoint=600.0, response=591.0
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 591.0
+response t=234.200246096, out=9.5, setpoint=600.0, response=591.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 591.0
+response t=236.202732086, out=9.1, setpoint=600.0, response=591.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 592.0
+response t=238.20599699, out=9.1, setpoint=600.0, response=592.0
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 592.0
+response t=240.209504128, out=9.5, setpoint=600.0, response=592.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 592.0
+response t=242.212117195, out=9.3, setpoint=600.0, response=592.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 593.0
+response t=244.213551044, out=9.0, setpoint=600.0, response=593.0
+GetPercentOutput ===>> 9.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 593.0
+response t=246.213037014, out=9.5, setpoint=600.0, response=593.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 593.0
+response t=248.215196133, out=9.3, setpoint=600.0, response=593.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 593.0
+response t=250.218013048, out=8.9, setpoint=600.0, response=593.0
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 593.0
+response t=252.219912052, out=9.3, setpoint=600.0, response=593.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 594.0
+response t=254.223613977, out=9.1, setpoint=600.0, response=594.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 594.0
+response t=256.225916147, out=9.0, setpoint=600.0, response=594.0
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 594.0
+response t=258.229792118, out=9.4, setpoint=600.0, response=594.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 594.0
+response t=260.232546091, out=9.3, setpoint=600.0, response=594.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 595.0
+response t=262.23379302, out=8.8, setpoint=600.0, response=595.0
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 595.0
+response t=264.237406015, out=9.3, setpoint=600.0, response=595.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 595.0
+response t=266.240071058, out=9.2, setpoint=600.0, response=595.0
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 595.0
+response t=268.243488073, out=9.0, setpoint=600.0, response=595.0
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 595.0
+response t=270.245014191, out=9.4, setpoint=600.0, response=595.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 595.0
+response t=272.248203993, out=9.1, setpoint=600.0, response=595.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 596.0
+response t=274.248645067, out=8.9, setpoint=600.0, response=596.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 596.0
+response t=276.250595093, out=9.2, setpoint=600.0, response=596.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 596.0
+response t=278.254000187, out=9.2, setpoint=600.0, response=596.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 596.0
+response t=280.254784107, out=8.9, setpoint=600.0, response=596.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 596.0
+response t=282.256651163, out=9.2, setpoint=600.0, response=596.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 596.0
+response t=284.258012056, out=9.2, setpoint=600.0, response=596.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=286.258895159, out=8.9, setpoint=600.0, response=597.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=288.261358023, out=9.1, setpoint=600.0, response=597.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=290.262473106, out=9.2, setpoint=600.0, response=597.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=292.263130188, out=8.9, setpoint=600.0, response=597.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=294.263908148, out=9.1, setpoint=600.0, response=597.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=296.265526056, out=9.2, setpoint=600.0, response=597.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=298.267358065, out=8.9, setpoint=600.0, response=597.0
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=300.266976118, out=9.1, setpoint=600.0, response=597.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 597.0
+response t=302.268081188, out=9.2, setpoint=600.0, response=597.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=304.271722078, out=8.8, setpoint=600.0, response=598.0
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=306.270812988, out=9.0, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=308.270526171, out=9.2, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=310.274152994, out=8.8, setpoint=600.0, response=598.0
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=312.27520299, out=9.0, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=314.277542114, out=9.2, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=316.279939175, out=8.8, setpoint=600.0, response=598.0
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=318.281122208, out=9.0, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=320.283830166, out=9.2, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=322.285573006, out=8.8, setpoint=600.0, response=598.0
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=324.288386106, out=9.0, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 598.0
+response t=326.287837029, out=9.2, setpoint=600.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=328.290863037, out=8.8, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=330.292060137, out=8.7, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=332.294154167, out=9.2, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=334.294512033, out=8.7, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=336.296509027, out=9.1, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=338.296926022, out=9.4, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=340.299727201, out=8.8, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=342.303484201, out=8.9, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=344.305706978, out=9.3, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=346.307681084, out=8.6, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=348.307766199, out=8.8, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=350.308717012, out=9.3, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=352.31105113, out=8.8, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=354.310974121, out=8.8, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=356.313449144, out=9.1, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=358.316160202, out=8.6, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=360.317919016, out=8.8, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=362.318108082, out=9.2, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=364.317447186, out=8.8, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=366.320550203, out=8.8, setpoint=600.0, response=599.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=368.322590113, out=9.3, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.7
+Get Checksum: 1601394399
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=370.324336052, out=8.7, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=372.327263117, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=374.326894999, out=9.4, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.7
+Get Checksum: 1601394399
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=376.330196142, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=378.33388114, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=380.33399415, out=9.2, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 600.0
+response t=382.337377071, out=8.6, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=384.337970018, out=8.9, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=386.33893919, out=9.4, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=388.342082024, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=390.341436148, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 599.0
+response t=392.344278097, out=9.3, setpoint=600.0, response=599.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=394.347683191, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=396.350547075, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=398.351997137, out=9.2, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=400.353831053, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=402.3544662, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=404.35714221, out=9.3, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=406.357067108, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=408.357833147, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=410.359704018, out=9.0, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=412.359137058, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=414.362466097, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.3
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=416.365791082, out=9.3, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=418.368663073, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=420.368848085, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=422.371665001, out=9.2, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=424.37146306, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=426.373665094, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=428.37660718, out=9.1, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=430.380209208, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=432.383367062, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=434.38401413, out=9.1, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=436.383599997, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=438.384754181, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=440.385161161, out=9.2, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=442.385202169, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=444.385533094, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=446.388126135, out=9.0, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=448.387701988, out=8.6, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=450.389320135, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.2
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=452.392832994, out=9.2, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=454.395320177, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=456.395515203, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=458.397162199, out=9.0, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=460.39629221, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=462.398372173, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=464.400399208, out=9.0, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=466.403076172, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=468.406534195, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=470.408948183, out=9.1, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=472.408155203, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=474.411599159, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=476.414475203, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=478.417140007, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=480.417391062, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=482.41971302, out=9.0, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=484.422976017, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=486.425155163, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=488.42636919, out=8.9, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.8
+Get Checksum: 1601394399
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=490.430179119, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=492.429984093, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=494.431151152, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 600.0
+response t=496.432639122, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=498.435564995, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=500.439310074, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=502.439741135, out=8.9, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=504.440999031, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=506.442501068, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=508.446346045, out=8.9, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=510.449483156, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=512.449779987, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=514.452677011, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=516.454868078, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=518.456436157, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=520.459667206, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=522.459599018, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=524.461999178, out=8.9, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=526.465709209, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=528.46826005, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=530.470475197, out=8.9, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=532.474469185, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=534.476024151, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=536.478962183, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=538.4816401, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=540.480765104, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=542.480031013, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=544.479762077, out=8.9, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=546.48268199, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=548.485782146, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=550.487811089, out=8.9, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=552.488318205, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=554.489613056, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=556.491198063, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=558.491033077, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=560.492632151, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=562.491801977, out=9.1, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=564.494594097, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=566.496900082, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=568.500904083, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=570.502624989, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=572.502422094, out=8.8, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=574.502641201, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=576.502933979, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=578.50515604, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=580.508387089, out=9.1, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=582.509913206, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=584.513271093, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=586.516384125, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=588.517651081, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=590.519203186, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=592.522608042, out=9.1, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=594.521794081, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=596.521606207, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=598.524748087, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=600.52759409, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=602.529914141, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=604.531220198, out=9.1, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 600.0
+response t=606.535117149, out=8.6, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=608.536328077, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=610.537014008, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=612.538823128, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=614.540616035, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=616.539916992, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=618.539520979, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=620.542785168, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=622.544847012, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=624.545026064, out=8.4, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=626.547451019, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=628.551137209, out=8.9, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=630.551460981, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=632.553212166, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=634.552924156, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=636.555735111, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.5
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=638.556615114, out=8.5, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=640.559717178, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=642.561943054, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=644.56242013, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=646.563928127, out=9.1, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=648.5664711, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=650.566442013, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=652.569421053, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=654.57212615, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=656.574626207, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=658.575224161, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=660.579240084, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=662.579106092, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=664.579549074, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=666.582622051, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=668.583552122, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.1
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=670.583437204, out=9.1, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=672.582731009, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=674.582777977, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=676.584307194, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.4
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=678.584948063, out=8.4, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=680.587174177, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 9.0
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=682.590015173, out=9.0, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=684.59029603, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=686.59403801, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=688.595185995, out=8.9, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=690.599290133, out=8.7, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=692.601927042, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=694.605118036, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=696.607033014, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=698.607344151, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=700.611293077, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=702.613309145, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=704.614340067, out=8.6, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=706.614071131, out=8.9, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=708.616266012, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=710.619110107, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=712.621215105, out=8.9, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=714.623357058, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=716.625739098, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.9
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=718.625235081, out=8.9, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=720.624416113, out=8.7, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.6
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=722.626265049, out=8.6, setpoint=600.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 8.8
+GetSetpoint ===>> 600.0
+GetProcessValue ===>> 600.0
+response t=724.627242088, out=8.8, setpoint=600.0, response=600.0
+GetPercentOutput ===>> 8.7
+GetSetpoint ===>> 600.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 600.0
+response t=726.626378059, out=8.7, setpoint=600.0, response=600.0
+Join finished
+block finished. duration 722.059875011
+Interval 1 finished
+extract (300,) {}
+set extraction state NMGRLFurnace ON! 300(temp) (0.75, 'red', 1.5)
+extract sample to 300 (temp)
+extract
+set setpoint to 300
+set setpoint=300.0
+setting pid parameters for 300.0
+{"pid": "HO,25;XP,425;TI,100;TD,10", "command": "SetPID"} ===>> OK
+{"setpoint": 300.0, "command": "SetSetpoint"} ===>> OK
+Furnace disabled.
+sleep (60,) {}
+SLEEP 60.0
+block started
+WaitControl setup for 60.0  
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 600.0
+response t=728.625647068, out=0, setpoint=300.0, response=600.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 600.0
+response t=730.627874136, out=0, setpoint=300.0, response=600.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+Get Checksum: 1601394399
+GetProcessValue ===>> 599.0
+response t=732.63057518, out=0, setpoint=300.0, response=599.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 598.0
+response t=734.632067204, out=0, setpoint=300.0, response=598.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 597.0
+response t=736.632539988, out=0, setpoint=300.0, response=597.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 596.0
+response t=738.632982016, out=0, setpoint=300.0, response=596.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 594.0
+response t=740.636839151, out=0, setpoint=300.0, response=594.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 592.0
+response t=742.63836813, out=0, setpoint=300.0, response=592.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 591.0
+response t=744.638320208, out=0, setpoint=300.0, response=591.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 589.0
+response t=746.638082981, out=0, setpoint=300.0, response=589.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 587.0
+response t=748.641409159, out=0, setpoint=300.0, response=587.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 585.0
+response t=750.643620014, out=0, setpoint=300.0, response=585.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 583.0
+response t=752.647006035, out=0, setpoint=300.0, response=583.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 581.0
+response t=754.65073514, out=0, setpoint=300.0, response=581.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 578.0
+response t=756.649940014, out=0, setpoint=300.0, response=578.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 576.0
+response t=758.650384188, out=0, setpoint=300.0, response=576.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 574.0
+response t=760.649739981, out=0, setpoint=300.0, response=574.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 572.0
+response t=762.650889158, out=0, setpoint=300.0, response=572.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 570.0
+response t=764.652836084, out=0, setpoint=300.0, response=570.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 567.0
+response t=766.65507412, out=0, setpoint=300.0, response=567.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 565.0
+response t=768.655204058, out=0, setpoint=300.0, response=565.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 563.0
+response t=770.655761003, out=0, setpoint=300.0, response=563.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 561.0
+response t=772.656138182, out=0, setpoint=300.0, response=561.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 558.0
+response t=774.657810211, out=0, setpoint=300.0, response=558.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 556.0
+response t=776.661808014, out=0, setpoint=300.0, response=556.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 554.0
+response t=778.663555145, out=0, setpoint=300.0, response=554.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 552.0
+response t=780.666340113, out=0, setpoint=300.0, response=552.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 550.0
+response t=782.666220188, out=0, setpoint=300.0, response=550.0
+Get Checksum: 1601394399
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 547.0
+response t=784.665774107, out=0, setpoint=300.0, response=547.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 545.0
+response t=786.668609142, out=0, setpoint=300.0, response=545.0
+Get Checksum: 1601394399
+Join finished
+block finished. duration 60.1645429134
+close ('B',) {}
+closing name=B desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close B ===>> OK
+GetValveState B ===>> False
+change switch state (False, False)
+---------------------------------------- close B () result=[(False, False)]
+locked=[False]
+close ('E',) {}
+closing name=E desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks E
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+Close E ===>> OK
+GetValveState E ===>> False
+change switch state (False, False)
+---------------------------------------- close E () result=[(False, False)]
+locked=[False]
+close ('C',) {}
+closing name=C desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+set states for children of B. state=False
+handle state [('B', False)]
+update switch state B False args=() kw={'refresh': False} ncanvase=4
+Close C ===>> OK
+refresh_canvas_needed fired
+GetValveState C ===>> False
+change switch state (False, False)
+---------------------------------------- close C () result=[(False, False)]
+locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 543.0
+response t=788.672100067, out=0, setpoint=300.0, response=543.0
+set states for children of C. state=False
+handle state [('C', False)]
+update switch state C False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Join finished
+block finished. duration 2.01209712029
+open ('J',) {}
+opening name=J desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks J
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Get Checksum: -813593049
+Open J ===>> OK
+GetValveState J ===>> OK
+change switch state (True, True)
+update switch state J True args=() kw={} ncanvase=4
+20:36:14 -- OPEN   VALVE-J (Bone to APIS)
+---------------------------------------- open J () result=[(True, True)], time=0.15 sec
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 541.0
+response t=790.671220064, out=0, setpoint=300.0, response=541.0
+locked=[False]
+sleep (30,) {}
+SLEEP 30.0
+block started
+WaitControl setup for 30.0  
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 538.0
+response t=792.674213171, out=0, setpoint=300.0, response=538.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 536.0
+response t=794.674538136, out=0, setpoint=300.0, response=536.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 534.0
+response t=796.677580118, out=0, setpoint=300.0, response=534.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 532.0
+response t=798.680522203, out=0, setpoint=300.0, response=532.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 530.0
+response t=800.68448019, out=0, setpoint=300.0, response=530.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 528.0
+response t=802.683937073, out=0, setpoint=300.0, response=528.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 526.0
+response t=804.687367201, out=0, setpoint=300.0, response=526.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 524.0
+response t=806.690299034, out=0, setpoint=300.0, response=524.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 522.0
+response t=808.691008091, out=0, setpoint=300.0, response=522.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 519.0
+response t=810.692041159, out=0, setpoint=300.0, response=519.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 517.0
+response t=812.694184065, out=0, setpoint=300.0, response=517.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 515.0
+response t=814.697432995, out=0, setpoint=300.0, response=515.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 513.0
+response t=816.698274136, out=0, setpoint=300.0, response=513.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 511.0
+response t=818.70116806, out=0, setpoint=300.0, response=511.0
+Get Checksum: -490799680
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 509.0
+response t=820.70028019, out=0, setpoint=300.0, response=509.0
+Join finished
+block finished. duration 30.0875849724
+close ('J',) {}
+closing name=J desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks J
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close J ===>> OK
+GetValveState J ===>> False
+change switch state (False, False)
+---------------------------------------- close J () result=[(False, False)]
+locked=[False]
+open ('FC',) {}
+opening name=FC desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks FC
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open FC ===>> OK
+set states for children of FC. state=True
+set states for children of J. state=False
+handle state [('FC', True), ('J', False)]
+update switch state FC True args=() kw={'refresh': True} ncanvase=4
+update switch state J False args=() kw={'refresh': False} ncanvase=4
+GetValveState FC ===>> False
+change switch state (None, False)
+---------------------------------------- open FC () result=[(None, False)], time=1.29 sec
+locked=[False]
+Failed to open valve FC 
+checking ownership. requestor=129.138.12.137
+check software interlocks FC
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+refresh_canvas_needed fired
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 507.0
+response t=822.704065084, out=0, setpoint=300.0, response=507.0
+Open FC ===>> OK
+GetValveState FC ===>> False
+change switch state (None, False)
+locked=[False]
+sleep (30.0,) {}
+SLEEP 30.0
+block started
+WaitControl setup for 30.0  
+Get Checksum: -813593049
+State checksums do not match. Local:881538794 Remote:-813593049
+State checksum failed
+set states for children of FC. state=False
+handle state [('FC', False)]
+update switch state FC False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 505.0
+response t=824.703137159, out=0, setpoint=300.0, response=505.0
+set states for children of FC. state=True
+handle state [('FC', True)]
+update switch state FC True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 503.0
+response t=826.704964161, out=0, setpoint=300.0, response=503.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 501.0
+response t=828.704866171, out=0, setpoint=300.0, response=501.0
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 499.0
+response t=830.704463005, out=0, setpoint=300.0, response=499.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+Get Checksum: 881538794
+GetProcessValue ===>> 497.0
+response t=832.706219196, out=0, setpoint=300.0, response=497.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 495.0
+response t=834.708463192, out=0, setpoint=300.0, response=495.0
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 493.0
+response t=836.710206032, out=0, setpoint=300.0, response=493.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 491.0
+response t=838.711103201, out=0, setpoint=300.0, response=491.0
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 489.0
+response t=840.711651087, out=0, setpoint=300.0, response=489.0
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 488.0
+response t=842.71432209, out=0, setpoint=300.0, response=488.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 486.0
+response t=844.717084169, out=0, setpoint=300.0, response=486.0
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 484.0
+response t=846.720529079, out=0, setpoint=300.0, response=484.0
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 482.0
+response t=848.723541021, out=0, setpoint=300.0, response=482.0
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 480.0
+response t=850.723282099, out=0, setpoint=300.0, response=480.0
+Get Checksum: 881538794
+GetPercentOutput ===>> 0.0
+GetSetpoint ===>> 300.0
+GetProcessValue ===>> 478.0
+response t=852.724664211, out=0, setpoint=300.0, response=478.0
+Join finished
+block finished. duration 30.0906419754
+stop_response_recorder () {}
+stop response recorder
+executed 2526.0
+felix_furnace.py completed successfully
+get achieved output
+Requested Output= 0.000
+Achieved Output=  0.000
+get response blob
+get output blob
+active pid =HO,25;XP,425;TI,100;TD,10
+persistence save...
+persistence save - db
+AutomatedRunPersister post_extraction_save deprecated
+persistence save - dvc
+no extraction position for 
+create new session 4874009200
+close session 4874009200
+Extraction Finished
+20:37:17 -- ******* Extraction Finished *******
+no overlap. not waiting for min ms pumptime
+20:37:17 -- Sending spectrometer configuration
+======== Sending configuration ========
+SetZFocus 9.84 ===>> OK
+SetHV 9000.0 ===>> OK
+SetZSymmetry 18.34 ===>> OK
+SetExtractionLens 42.35 ===>> OK
+SetIonRepeller -4.08 ===>> OK
+SetElectronEnergy 107.0 ===>> OK
+SetYSymmetry 12.72 ===>> OK
+send trap current 400.0
+GetParameter Trap Current Readback ===>> 398.75553927852
+SetParameter Trap Current Set,400.0 ===>> OK
+updating mftable name argon
+Using mftable located at /Users/obama/PychronDev/setupfiles/spectrometer/mftables/argon.csv
+============ MFtable ===========
+Isotope  H2     H1     AX     L1     L2     L2(CDD)
+Ar40     3.4941 3.5646 3.6353 3.7106 3.8116 3.7976
+Ar39     3.4250 3.4941 3.5634 3.6372 3.7361 3.7224
+Ar36     3.2149 3.2799 3.3448 3.4141 3.5168 3.4941
+================================
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+======== Configuration Finished ========
+GetYSymmetry ===>> 12.72
+GetZSymmetry ===>> 18.34
+GetParameter Trap Current Readback ===>> 397.972349386559
+GetHighVoltage ===>> 9000
+start measurement
+do measurement
+L#=65199 analysis type=unknown
+Measurement Started felix_analysis400_120.py
+20:37:17 -- ******* Measurement Started felix_analysis400_120.py *******
+state changed from extraction to measurement
+setting spec, defl, and gains
+GetExtractionLens ===>> 42.35
+GetYSymmetry ===>> 12.72
+GetZSymmetry ===>> 18.34
+Get Checksum: 881538794
+GetZFocus ===>> 9.84
+GetDeflection H2 (CDD) ===>> 3250
+GetDeflection H1 (CDD) ===>> 3250
+GetDeflection AX (CDD) ===>> 3250
+GetDeflection L1 (CDD) ===>> 3250
+GetDeflection L2 (CDD) ===>> 0
+GetGain H2 ===>> 0.9809305
+GetGain H1 ===>> 0.966108
+GetGain AX ===>> 0.96253
+GetGain L1 ===>> 0.970094835296087
+GetGain L2 ===>> 0.967359864778375
+GetGain H2(CDD) ===>> 0
+GetGain H1(CDD) ===>> 0
+GetGain AX(CDD) ===>> 0
+GetGain L1(CDD) ===>> 0
+GetGain L2(CDD) ===>> 0
+pre measurement save
+New frame /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+flush and close file /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+testing...
+no interpolation path defined
+executed 647.122112
+unknown measurement script
+activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2(CDD)') {}
+activate detectors
+*************** Set Analysis View Ar/Ar
+clearing graphs
+clear isotope group
+setting isotope det=H2, iso=Ar40
+setting isotope det=H1, iso=Ar39
+setting isotope det=AX, iso=Ar38
+setting isotope det=L1, iso=Ar37
+setting isotope det=L2(CDD), iso=Ar36
+setting previous blanks
+ - setting Ar40 blank 2.997+/-0.019
+ - setting Ar36 blank 0.01100+/-0.00023
+ - setting Ar37 blank -0.014+/-0.012
+ - setting Ar38 blank 0.020+/-0.013
+ - setting Ar39 blank 0.017+/-0.022
+load analysis view
+position_magnet ('Ar40',) {'detector': 'H2'}
+detector Detector(H2)
+POSITION Ar40 H2
+setting detector H2 to Ar40 (39.9624)
+setting detector H1 to Ar39 (38.8624)
+setting detector AX to Ar38 (37.9624)
+setting detector L1 to Ar37 (36.9624)
+setting detector L2 to Ar36 (35.8624)
+setting detector H2(CDD) to Ar40 (39.8624)
+setting detector H1(CDD) to Ar39 (38.8624)
+setting detector AX(CDD) to Ar38 (37.8624)
+setting detector L1(CDD) to Ar37 (36.8624)
+setting detector L2(CDD) to Ar36 (35.9624)
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [ -2.21374612e-04   8.66930544e-02   3.83151281e-01]
+H2 map mass to dac 39.9624 >> 3.49408
+GetHighVoltage ===>> 9000
+positioning Ar40 (3.49408) on H2
+setting magnet DAC
+current  : 3.500950
+requested: 3.494080
+Delta Dac: 0.006870
+Checking detector protection. dv=0.00687
+SetMagnetDAC 3.49408 ===>> OK
+Magnet settling time: 0.500
+equilibrate () {'delay': 3, 'inlet': 'H', 'outlet': 'V', 'eqtime': 22.0}
+Equilibration Started
+20:37:18 -- ******* Equilibration Started *******
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close V ===>> OK
+GetValveState V ===>> False
+change switch state (False, False)
+waiting 3s before opening inlet value ('H',)
+set states for children of V. state=False
+handle state [('V', False)]
+update switch state V False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+Get Checksum: -68879594
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open H ===>> OK
+GetValveState H ===>> OK
+change switch state (True, True)
+update switch state H True args=() kw={} ncanvase=4
+20:37:21 -- OPEN   VALVE-H (Felix Inlet)
+set_time_zero () {}
+equilibrating for 22.0sec
+sniff (22.0,) {}
+py_sniff
+build tables- sniff [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /sniff/Ar40 (Group) '' table H2
+add group /sniff/Ar39 (Group) '' table H1
+add group /sniff/Ar38 (Group) '' table AX
+add group /sniff/Ar37 (Group) '' table L1
+add group /sniff/Ar36 (Group) '' table L2(CDD)
+flush and close file /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+measuring sniff. ncounts=22.0
+starting measurement
+Get Checksum: -1905803709
+Get Checksum: -1905803709
+Get Checksum: -1905803709
+Get Checksum: -1905803709
+Get Checksum: -1905803709
+Get Checksum: -1905803709
+Get Checksum: -1905803709
+Equilibration Finished
+20:37:43 -- ******* Equilibration Finished *******
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close H ===>> OK
+GetValveState H ===>> False
+change switch state (False, False)
+Post Equilibration Started felix_pump_extraction_line.py
+20:37:44 -- ******* Post Equilibration Started felix_pump_extraction_line.py *******
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 4.0
+executed 4.0
+Pump after analysis
+doing GOSUB
+testing...
+no interpolation path defined
+executed 4.0
+Pump Bone
+close () {'description': 'Felix Inlet'}
+closing name=--- desc=Felix Inlet
+checking ownership. requestor=129.138.12.137
+check software interlocks H
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close H ===>> OK
+GetValveState H ===>> False
+change switch state (False, False)
+---------------------------------------- close None (Felix Inlet) result=[(False, False)]
+locked=[False]
+is_closed ('A',) {}
+is A () closed?
+is closed False
+close () {'description': 'CO2 Laser to Bone'}
+closing name=--- desc=CO2 Laser to Bone
+checking ownership. requestor=129.138.12.137
+check software interlocks F
+interlocks []
+actuate state mode=None-script, software_lock=True
+VALVE-F(CO2 Laser to Bone) software locked
+change switch state (True, False)
+---------------------------------------- close None (CO2 Laser to Bone) result=[(True, False)]
+locked=[True]
+sleep (1,) {}
+SLEEP 1.0
+set states for children of H. state=False
+handle state [('H', False)]
+update switch state H False args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+close () {'description': 'CO2 Laser to Roughing'}
+closing name=--- desc=CO2 Laser to Roughing
+checking ownership. requestor=129.138.12.137
+check software interlocks G
+interlocks []
+actuate state mode=None-script, software_lock=True
+VALVE-G(CO2 Laser to Roughing) software locked
+change switch state (True, False)
+---------------------------------------- close None (CO2 Laser to Roughing) result=[(True, False)]
+locked=[True]
+open () {'description': 'Bone to Turbo'}
+opening name=--- desc=Bone to Turbo
+checking ownership. requestor=129.138.12.137
+check software interlocks C
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open C ===>> OK
+set states for children of C. state=True
+handle state [('C', True)]
+update switch state C True args=() kw={'refresh': False} ncanvase=4
+refresh_canvas_needed fired
+GetValveState C ===>> OK
+change switch state (True, True)
+update switch state C True args=() kw={} ncanvase=4
+measurement finished
+estimated time: 23.069 actual time: :23.190
+flush and close file /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+set_fits () {}
+Get Checksum: 445459879
+using default fits file=/Users/obama/PychronDev/scripts/measurement/fits/nominal.yaml
+20:37:45 -- OPEN   VALVE-C (Bone to Turbo)
+set "Ar40" to "('Parabolic', 'SEM')"
+---------------------------------------- open None (Bone to Turbo) result=[(True, True)], time=0.38 sec
+set "Ar36" to "('Parabolic', 'SEM')"
+set "Ar37" to "('linear', 'SEM')"
+set "Ar38" to "('linear', 'SEM')"
+set "Ar39" to "('Parabolic', 'SEM')"
+set_baseline_fits () {}
+using default fits file=/Users/obama/PychronDev/scripts/measurement/fits/nominal.yaml
+set "H2" to "('average', 'SEM')"
+set "L2(CDD)" to "('average', 'SEM')"
+set "L1" to "('average', 'SEM')"
+set "AX" to "('average', 'SEM')"
+set "H1" to "('average', 'SEM')"
+multicollect () {'integration_time': 1.048576, 'ncounts': 400}
+build tables- signal [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /signal/Ar40 (Group) '' table H2
+add group /signal/Ar39 (Group) '' table H1
+add group /signal/Ar38 (Group) '' table AX
+add group /signal/Ar37 (Group) '' table L1
+add group /signal/Ar36 (Group) '' table L2(CDD)
+flush and close file /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+measuring signal. ncounts=400
+locked=[False]
+open () {'description': 'Bone to Getter GP-50'}
+opening name=--- desc=Bone to Getter GP-50
+checking ownership. requestor=129.138.12.137
+check software interlocks N
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open N ===>> OK
+GetValveState N ===>> OK
+change switch state (True, True)
+update switch state N True args=() kw={} ncanvase=4
+20:37:46 -- OPEN   VALVE-N (Bone to Getter GP-50)
+---------------------------------------- open None (Bone to Getter GP-50) result=[(True, True)], time=0.17 sec
+locked=[False]
+open () {'description': 'Bone to Diode Laser'}
+opening name=--- desc=Bone to Diode Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks B
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+starting measurement
+Open B ===>> OK
+GetValveState B ===>> OK
+change switch state (True, True)
+update switch state B True args=() kw={} ncanvase=4
+20:37:46 -- OPEN   VALVE-B (Bone to Diode Laser)
+---------------------------------------- open None (Bone to Diode Laser) result=[(True, True)], time=0.29 sec
+locked=[False]
+open () {'description': 'Bone to CO2 Laser'}
+opening name=--- desc=Bone to CO2 Laser
+checking ownership. requestor=129.138.12.137
+check software interlocks D
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open D ===>> OK
+GetValveState D ===>> OK
+change switch state (True, True)
+update switch state D True args=() kw={} ncanvase=4
+20:37:47 -- OPEN   VALVE-D (Bone to CO2 Laser)
+---------------------------------------- open None (Bone to CO2 Laser) result=[(True, True)], time=0.19 sec
+locked=[False]
+sleep (1,) {}
+SLEEP 1.0
+set_resource () {'name': 'CO2PumpTimeFlag', 'value': 30}
+Set CO2PumpTimeFlag 30 ===>> OK
+release ('FelixCO2Flag',) {}
+release FelixCO2Flag
+Set FelixCO2Flag 0 ===>> OK
+executed 6.0
+PumpBone.py completed successfully
+gosub finished
+get_resource_value () {'name': 'FelixMiniboneFlag'}
+Read FelixMiniboneFlag ===>> 0
+Get Resource Value FelixMiniboneFlag=0.0
+executed 4.0
+felix_pump_extraction_line.py completed successfully
+Post Equilibration Finished
+20:37:48 -- ******* Post Equilibration Finished *******
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:38:11 -- collecting point 25
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:38:37 -- collecting point 50
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:39:04 -- collecting point 75
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:39:30 -- collecting point 100
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:39:56 -- collecting point 125
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:40:22 -- collecting point 150
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:40:49 -- collecting point 175
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:41:15 -- collecting point 200
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:41:41 -- collecting point 225
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:42:08 -- collecting point 250
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:42:34 -- collecting point 275
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:43:00 -- collecting point 300
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:43:26 -- collecting point 325
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+20:43:53 -- collecting point 350
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:44:19 -- collecting point 375
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:44:45 -- collecting point 400
+measurement finished
+estimated time: 419.430 actual time: :420.630
+flush and close file /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+baselines () {'settling_time': 15.0, 'detector': 'H2', 'mass': 40.062, 'ncounts': 120}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
+build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group baseline table H2
+add group baseline table H1
+add group baseline table AX
+add group baseline table L1
+add group baseline table L2(CDD)
+flush and close file /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+detector Detector(H2)
+POSITION 40.062 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [ -2.21374612e-04   8.66930544e-02   3.83151281e-01]
+H2 map mass to dac 40.062 >> 3.50095017731
+GetHighVoltage ===>> 9000
+positioning 40.062 (3.50095017731) on H2
+setting magnet DAC
+current  : 3.494080
+requested: 3.500950
+Delta Dac: 0.006870
+Checking detector protection. dv=0.00687
+SetMagnetDAC 3.50095017731 ===>> OK
+Magnet settling time: 0.500
+Delaying 15.0s for detectors to settle
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Join finished
+measuring baseline. ncounts=120
+starting measurement
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:45:28 -- collecting point 25
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:45:54 -- collecting point 50
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:46:20 -- collecting point 75
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+20:46:47 -- collecting point 100
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+Get Checksum: 1796613102
+Get Checksum: 1796613102
+measurement finished
+estimated time: 125.829 actual time: :126.239
+flush and close file /Users/obama/PychronDev/data/isotopes/3c/3a003a-e732-4151-9382-c114f85d860e.h5
+activate_detectors ('H1', 'L2(CDD)') {'peak_center': True}
+peak_center () {'detector': 'H2', 'integration_time': 1.048576, 'isotope': 'Ar40'}
+peak center: mean=5.55129184607 threshold=100.0
+Skipping peak center. intensities to small. 5.55129184607<100.0
+finished measure script
+executed 647.122112
+felix_analysis400_120.py completed successfully
+Measurement Finished
+20:47:09 -- ******* Measurement Finished *******
+Post Measurement Started felix_pump_ms.py
+20:47:09 -- ******* Post Measurement Started felix_pump_ms.py *******
+testing...
+no interpolation path defined
+executed 0
+Pumping spectrometer
+open () {'name': 'V'}
+opening name=V desc=---
+checking ownership. requestor=129.138.12.137
+check software interlocks V
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open V ===>> OK
+GetValveState V ===>> OK
+change switch state (True, True)
+update switch state V True args=() kw={} ncanvase=4
+20:47:09 -- OPEN   VALVE-V (Felix Ion Pump)
+---------------------------------------- open V () result=[(True, True)], time=0.15 sec
+Get Checksum: 2035179493
+locked=[False]
+executed 0
+felix_pump_ms.py completed successfully
+setting _ms_pumptime
+Post Measurement Finished
+20:47:09 -- ******* Post Measurement Finished *******
+$$$$$$$$$$$$$$$$$$$$ state at run end measurement
+state changed from measurement to success
+post measurement save measured=True aborted=False
+Set filtering
+setting fod for Ar40= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for H2= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar36= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for L2(CDD)= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar37= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for L1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar38= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for AX= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar39= {'filter_outliers': True, 'std_devs': 2, 'iterations': 2}
+setting fod for H1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+persistence save...
+persistence save - db
+post measurement save
+5003730096 connecting to database sqlite:////Users/obama/PychronDev/.appdata/local_lab.db
+connected to db sqlite:////Users/obama/PychronDev/.appdata/local_lab.db
+create new session 5003730096
+close session 5003730096
+No database instance. Not saving post measurement to isotopedb database
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+massspec enabled True
+create new session 5024456336
+MassSpec Database Version: 16.0
+close session 5024456336
+saving post measurement to secondary database
+saving to massspec database 129.138.12.160/massspecdata
+setting labnumber to 65199
+setting aliquot to 1
+setting step to F
+setting uuid to 3c3a003a-e732-4151-9382-c114f85d860e
+setting irradpos to 65199
+setting extract_device to NMGRL Furnace
+setting tray to 
+setting position to 
+setting power_requested to 600.0
+setting extract_value to 600.0
+setting duration to 720.0
+setting duration_at_request to 720.0
+setting first_stage_delay to 720.0
+setting cleanup to 30.0
+setting comment to Ksp, 5.41 mg
+setting irradiation to NM-285
+setting level to B
+setting irradiation_level to B
+setting sample to NB-14
+setting material to Kspar
+setting project to TibetMDD
+setting mass_spectrometer to Felix
+no attribute chron_dosages
+no attribute production_ratios
+no attribute interference_corrections
+no attribute production_name
+no attribute j
+Reference Isotope=Ar40
+Reference Detector=H2
+%%%%%%%%%%%%%%%%%%%% Comment: Ksp, 5.41 mg %%%%%%%%%%%%%%%%%%%
+adding isotope Ar40 H2
+add baseline dbdet= Ar40. original det= H2
+get baseline data Ar40 H2
+Get data baseline <pychron.processing.isotope.Baseline object at 0x137195d10> len t=120
+baseline Ar40. v=0.0173522771178, e=0.00884907247255
+get signal data Ar40 H2
+Get data signal Ar40 3.048+/-0.018 len t=400
+adding isotope Ar39 H1
+add baseline dbdet= Ar39. original det= H1
+get baseline data Ar39 H1
+Get data baseline <pychron.processing.isotope.Baseline object at 0x137195210> len t=120
+baseline Ar39. v=-0.00854156883575, e=0.0117646337707
+get signal data Ar39 H1
+Get data signal Ar39 -0.021+/-0.021 len t=400
+adding isotope Ar38 AX
+add baseline dbdet= Ar38. original det= AX
+get baseline data Ar38 AX
+Get data baseline <pychron.processing.isotope.Baseline object at 0x1371950d0> len t=120
+baseline Ar38. v=-0.106864415835, e=0.0113957568403
+get signal data Ar38 AX
+Get data signal Ar38 -0.004+/-0.012 len t=400
+adding isotope Ar37 L1
+add baseline dbdet= Ar37. original det= L1
+get baseline data Ar37 L1
+Get data baseline <pychron.processing.isotope.Baseline object at 0x137195890> len t=120
+baseline Ar37. v=-0.520604102082, e=0.0109518826341
+get signal data Ar37 L1
+Get data signal Ar37 -0.003+/-0.011 len t=400
+adding isotope Ar36 L2(CDD)
+add baseline dbdet= Ar36. original det= L2(CDD)
+get baseline data Ar36 L2(CDD)
+Get data baseline <pychron.processing.isotope.Baseline object at 0x137195f50> len t=120
+baseline Ar36. v=0.0, e=0.0
+get signal data Ar36 L2(CDD)
+Get data signal Ar36 0.01048+/-0.00024 len t=400
+65199-01F added analysis time 1.0455031395s
+analysis added to mass spec database
+mass spec save time= 1.088
+persistence save - dvc
+================= post measurement started
+create new session 4874009200
+close session 4874009200
+---------------- Experiment Queue saving disabled
+DVC saving peakcenter
+Smart pull ahead: 0 behind: 0
+Up-to-date with origin
+add to repo msg=modified - 1e2ad98a77a0f8b97e0df49be2474708cb221738.json
+add to repo msg=modified - 99-01F.json
+add to repo msg=modified - 99-01F.dat.json
+Get Checksum: 2035179493
+add to repo msg=modified - 99-01F.blan.json
+add to repo msg=modified - 99-01F.inte.json
+add to repo msg=modified - 99-01F.icfa.json
+add to repo msg=modified - 99-01F.base.json
+not at valid file /Users/obama/PychronDev/data/.dvc/repositories/TibetMDD/651/tags/99-01F.tags.json
+add to repo msg=modified - 99-01F.peak.json
+add to repo msg=modified - 99-01F.extr.json
+not at valid file /Users/obama/PychronDev/data/.dvc/repositories/TibetMDD/651/monitor/99-01F.moni.json
+commit message=<COLLECTION>
+add to repo msg=modified - 99-01F.inte.json
+add to repo msg=modified - 99-01F.base.json
+commit message=<ISOEVO> default collection fits
+Get Checksum: 2035179493
+add to repo msg=modified - 99-01F.blan.json
+commit message=<BLANKS> preceding bu-FD-F-458
+add to repo msg=modified - 99-01F.icfa.json
+commit message=<ICFactor> default
+push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x12c671770>
+pushing to remote=origin, url=https://github.com
+Get Checksum: 2035179493
+Get Checksum: 2035179493
+no changes to meta repo
+create new session 4874009200
+add association TibetMDD
+get identifier "65199"
+setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x13133df50>
+close session 4874009200
+================= post measurement finished
+20:47:23 -- ******* Post Run Check *******
+loading queue conditionals post_run_actions
+loading system conditionals post_run_actions
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+loading queue conditionals post_run_terminations
+loading system conditionals post_run_terminations
+loading conditionals from /Users/obama/PychronDev/setupfiles/spectrometer/default_conditionals.yaml
+Checking default post run terminations n=1
+GetDeflection L2 (CDD) ===>> 0
+testing L2_CDD_==3250
+evaluate ot="L2(CDD).deflection==3250" t="L2_CDD_==3250", ctx="{'L2_CDD_': 0.0}"
+20:47:23 -- ******* Post Run Check Passed *******
+20:47:23 -- Automated run 65199-01F success duration: 1460.513 s
+----------------- finish -----------------
+----------------- stop -----------------
+retroactive repository identifiers disabled
+finish run. runs completed=4
+update duration runid=65199-01F, duration=1460.5126121, md5=baa265ee
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 624.242112
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed 184.0
+script duration name:furnace seconds:184.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_furnace.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 4.0
+executed 4.0
+Script duration 808.0
+Run total estimated duration= 809.000
+analysis400_120 in script context. using previous estimated duration
+script duration name:analysis400_120 seconds:624.0
+pump_ms in script context. using previous estimated duration
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x1.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 102.0
+script duration name:air_x1 seconds:102.0
+pump_extraction_line in script context. using previous estimated duration
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+furnace in script context. using previous estimated duration
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+air_x1 in script context. using previous estimated duration
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_air_x2.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 174.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+air_x2 in script context. using previous estimated duration
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+loading script "felix_analysis400_120.py"
+loading script "felix_pump_ms.py"
+loading script "felix_cocktail_x3.py"
+loading script "felix_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 0
+calculate duration
+testing...
+no interpolation path defined
+executed 32.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 2.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+calculate duration
+testing...
+no interpolation path defined
+executed 34.0
+executed 244.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+cocktail_x3 in script context. using previous estimated duration
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x1 seconds:102.0
+Script duration 726.0
+Run total estimated duration= 727.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:air_x2 seconds:174.0
+Script duration 798.0
+Run total estimated duration= 799.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:cocktail_x3 seconds:244.0
+Script duration 868.0
+Run total estimated duration= 869.000
+script duration name:analysis400_120 seconds:624.0
+script duration name:furnace seconds:184.0
+Script duration 808.0
+Run total estimated duration= 809.000
+nruns=190 before=5.0, run_dur=153230.0, btw=945.0
+write rem/ex queues
+/Users/obama/PychronDev/experiments/rem/FurnaceKSpar12_23_16.rem.txt
+/Users/obama/PychronDev/experiments/rem/FurnaceKSpar12_23_16.ex.txt
+doing event level: 3
